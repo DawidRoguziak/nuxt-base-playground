@@ -5,7 +5,7 @@ const query = ref<string>("batman");
 const movies = ref<Moive[]>([]);
 const search = async () => {
   //@ts-ignore
-  const {Search} = await $fetch(`http://www.omdbapi.com/?apikey=a7ffe190&s=${query.value}`);
+  const {Search} = await $fetch(`http://www.omdbapi.com/?apikey=API_KEY&s=${query.value}`);
   movies.value = Search;
 }
 

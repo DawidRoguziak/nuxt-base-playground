@@ -2,7 +2,7 @@
 const route = useRoute();
 
 const {data} = await useFetch(
-    `http://www.omdbapi.com/?apikey=a7ffe190&i=${route.params.id}`,
+    `http://www.omdbapi.com/?apikey=API_KEY&i=${route.params.id}`,
     {
       pick: ['Title', 'Plot', 'Error', 'Poster']
     });
